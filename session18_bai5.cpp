@@ -35,7 +35,6 @@ int main() {
             printf("\nNhap ten moi: ");
             getchar();
             fgets(students[i].name, sizeof(students[i].name), stdin);
-            students[i].name[strcspn(students[i].name, "\n")] = '\0';
 
             printf("Nhap tuoi moi: ");
             scanf("%d", &students[i].age);
@@ -54,7 +53,6 @@ int main() {
         printf("Ten: %s\n", students[i].name);
         printf("Tuoi: %d\n", students[i].age);
         printf("So dien thoai: %s\n", students[i].phoneNumber);
-        printf("-------------------------\n");
     }
 
     return 0;
